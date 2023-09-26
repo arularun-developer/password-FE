@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Instrument+Sans&family=Inter&family=Josefin+Sans&family=Montserrat&family=Open+Sans:wght@700&family=Oswald:wght@300&family=PT+Serif:ital,wght@1,700&family=Playfair+Display:wght@600&family=Poppins:ital,wght@0,400;1,300&family=Raleway:ital,wght@0,400;1,300&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  background-color: #1e1e1ead;
+  justify-content: center;
+  align-items: center;
+  background-image:
+    url("./assets/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#root {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: black;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.308);
+}
+
+.signIn {
+  background: rgba(231, 224, 224, 0);
+  border-radius:12px;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  /* backdrop-filter: blur(5px); */
+  /* -webkit-backdrop-filter: blur(5px); */
+
+  box-shadow: 0 0 0 0.1rem rgba(250, 246, 246, 0.884);
+
+}
+
+form {
+  max-width: 500px !important;
+  /* box-shadow: 0 0 10px #000 !important; */
+}
+
+label,
+h2 p,
+.dark {
+  color:white!important;
+  font-weight: bold !important;
+  align-self: start !important;
+}
+
+h2 {
+  font-weight: bolder !important;
+  color:black !important;
+}
