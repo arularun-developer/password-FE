@@ -17,6 +17,7 @@ function Signup() {
     console.log(cPassword)
     if(email || username||password ||cPassword){
         console.log("thanks for filling the form")
+        navigate("/homepage")
     }else{
       toast.error("Please fill all the fields")
 
