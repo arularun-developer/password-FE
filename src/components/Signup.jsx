@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Signup() {
+function Signup({handleSignUp}) {
   return (
     <form
-    // onSubmit={handleSignUp}
+    onSubmit={handleSignUp}
     className="signIn container d-flex flex-column gap-1 p-3"
   >
     <h2 className="display-6 text-center text-light">Sign Up</h2>
@@ -14,8 +14,8 @@ function Signup() {
         className="form-control"
         id="email"
         placeholder="Email"
-        // value={email}
-        // onChange={(e) => setEmail(e.target.value)}
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
         required
       />
       <small className="form-text text-muted"></small>
@@ -28,8 +28,8 @@ function Signup() {
         id="username"
         placeholder="Username"
         required
-        // value={username}
-        // onChange={(e) => setUsername(e.target.value)}
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
       />
       <small className="form-text text-muted"></small>
     </div>
@@ -41,8 +41,8 @@ function Signup() {
         id="password"
         placeholder="Password"
         required
-        // value={password}
-        // onChange={(e) => setPassword(e.target.value)}
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
       />
       <small className="form-text text-muted"></small>
     </div>
@@ -54,8 +54,8 @@ function Signup() {
         id="cPassword"
         placeholder="Confirm Password"
         required
-        // value={cPassword}
-        // onChange={(e) => setcPassword(e.target.value)}
+        value={cPassword}
+        onChange={(e) => setcPassword(e.target.value)}
       />
       <small className="form-text text-muted"></small>
     </div>

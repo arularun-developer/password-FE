@@ -15,7 +15,7 @@ function App() {
   let [password, setPassword] = useState("");
   let [cPassword, setcPassword] = useState("");
   let [resetToken, setResetToken] = useState("");
-  const navigate = useNavigate();
+  const navigate = useNavigate("");
 
    
 
@@ -24,7 +24,17 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Signin  />}></Route>
-        <Route path="/signup" element={<Signup />}></Route>
+        <Route path="/signup" element={<Signup 
+                      handleSignUp={handleSignUp}
+                      email={email}
+                      setEmail={setEmail}
+                      password={password}
+                      setPassword={setPassword}
+                      username={username}
+                      setUsername={setUsername}
+                      cPassword={cPassword}
+                      setcPassword={setcPassword}
+        />}></Route>
         <Route path="/forgotpassword" element={<Forgotpassword/>}></Route>
         <Route path="/createpage" element={<Createpage/>}></Route>
         <Route path="/passwordcreatepage" element={<Passwordcreatepage/>}></Route>
