@@ -9,7 +9,7 @@ function Signup() {
   let [username, setUsername] = useState("");
   let [password, setPassword] = useState("");
   let [cPassword, setcPassword] = useState("");
-  const handleSignUp = async(e) =>{
+  const handleSignUp = (e) =>{
     e.preventDefault();
     console.log(email)
     console.log(username)
