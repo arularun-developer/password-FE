@@ -10,10 +10,7 @@ import Checkmail from './components/Checkmail'
 import { useState } from 'react'
 import Homepage from './components/Homepage'
 function App() {
-  let [email, setEmail] = useState("");
-  let [username, setUsername] = useState("");
-  let [password, setPassword] = useState("");
-  let [cPassword, setcPassword] = useState("");
+ 
   let [resetToken, setResetToken] = useState("");
   const navigate = useNavigate("");
 
@@ -23,17 +20,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Signin  />}></Route>
+        <Route path="/" element={<Signin/>}></Route>
         <Route path="/signup" element={<Signup 
-                      handleSignUp={handleSignUp}
-                      email={email}
-                      setEmail={setEmail}
-                      password={password}
-                      setPassword={setPassword}
-                      username={username}
-                      setUsername={setUsername}
-                      cPassword={cPassword}
-                      setcPassword={setcPassword}
+                   
         />}></Route>
         <Route path="/forgotpassword" element={<Forgotpassword/>}></Route>
         <Route path="/createpage" element={<Createpage/>}></Route>
