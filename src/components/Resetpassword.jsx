@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
- import { useNavigation } from 'react-router-dom';
+import { useNavigation } from 'react-router-dom';
 
 
 function Resetpassword() {
@@ -31,7 +31,7 @@ function Resetpassword() {
       if (response.status === 200) {
         toast.success("Password reset successful");
         setconfirmpassword("")
-  
+
         // You can redirect the user to a success page or perform other actions.
       }
     } catch (error) {
@@ -61,7 +61,7 @@ function Resetpassword() {
 
         />
       </div>
-     
+
 
       <button type="submit" className="btn btn-primary">
         Sumbit
