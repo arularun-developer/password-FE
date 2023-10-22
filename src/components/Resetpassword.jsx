@@ -30,9 +30,8 @@ function Resetpassword() {
 
       if (response.status === 200) {
         toast.success("Password reset successful");
-
         setconfirmpassword("")
-        setTimeout(()=>{navigate('/login')},5000);
+  
         // You can redirect the user to a success page or perform other actions.
       }
     } catch (error) {
