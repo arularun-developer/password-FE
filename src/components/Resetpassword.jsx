@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
-import { useNavigation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 
 function Resetpassword() {
-  const navigate = useNavigation("")
-  const [confirmpassword, setconfirmpassword] = useState("")
+  const navigate = useNavigate();
+  const [confirmpassword, setconfirmpassword] = useState("");
 
 
 
@@ -30,6 +31,7 @@ function Resetpassword() {
 
       if (response.status === 200) {
         toast.success("Password reset successful");
+        navigate('/')
         setconfirmpassword("")
 
         // You can redirect the user to a success page or perform other actions.
